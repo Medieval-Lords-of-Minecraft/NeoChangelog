@@ -20,10 +20,7 @@ public class FileManager {
 	String lastUpdated = null;
 
 	public FileManager(Plugin main) {
-		logFile = new File(main.getDataFolder(), "changelog.yml");
-		if (!logFile.exists()) {
-			main.saveResource("changelog.yml", false);
-		}
+		logFile = new File("/home/MLMC/Resources/shared/NeoChangelog/changelog.yml");
 	}
 
 	public String getLastUpdated() {
